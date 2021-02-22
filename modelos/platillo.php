@@ -25,4 +25,6 @@ function obtenerPlatillo($platillo_id){
   $resultado = mysqli_query($mysqli, $sql);
   return $resultado;
 }
+
+--otra cambio
  ?>

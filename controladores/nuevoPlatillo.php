@@ -25,11 +25,12 @@
       }
     } else {
       include "../vistas/resultPlatilloError.php";
-       //echo "No se pudo cargar la imagen y el platillo";
+       
     }
 
   } else {
     include "../vistas/frmNuevoPlatillo.php";
   }
+  --Otra para probar cambios
 
  ?>
