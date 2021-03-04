@@ -1,0 +1,36 @@
+2021-02-10 19:39:38 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «dwh_mxconectado»
+
+2021-02-10 20:42:59 ERROR  : ERROR:  error de sintaxis en o cerca de «cat_tipo_agrupador»
+LINE 13: cat_tipo_agrupador (
+         ^
+2021-02-10 20:43:28 ERROR  : ERROR:  error de sintaxis en o cerca de «cat_agrupadores»
+LINE 1: CREATE cat_agrupadores(
+               ^
+2021-02-10 20:43:40 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 4:  nombre varchar(),
+                        ^
+2021-02-10 20:45:19 ERROR  : ERROR:  no existe la tabla «centro_vacunacion»
+2021-02-10 20:48:51 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 6: );
+        ^
+2021-02-10 21:02:01 ERROR  : ERROR:  la relación «centro_vacunacion» ya existe
+2021-02-10 21:02:06 ERROR  : ERROR:  la relación «pensonal_centro_vacunacion» ya existe
+2021-02-10 21:06:43 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 5: );
+        ^
+2021-02-10 21:10:17 ERROR  : ERROR:  la relación «cat_preguntas_clinicas» ya existe
+2021-02-10 21:18:00 ERROR  : ERROR:  error de sintaxis en o cerca de «id_agrupador1»
+LINE 10:  id_agrupador1 int,
+          ^
+2021-02-10 21:28:47 ERROR  : ERROR:  la relación «persona_registro» ya existe
+2021-02-10 21:32:52 ERROR  : ERROR:  error de sintaxis en o cerca de «PRIMARY»
+LINE 7:  CONSTRAINT PRIMARY KEY (id_centro_vacunacion,id_vacuna,lote...
+                    ^
+2021-02-11 11:35:36 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «dwh_mxconectado»
+
+2021-02-11 15:34:47 ERROR  : ERROR:  error de sintaxis en o cerca de «varchar»
+LINE 1: ...ER TABLE cat_agrupadores ADD COLLUMN cve_original varchar(30...
+                                                             ^
+2021-02-11 16:27:31 ERROR  : ERROR:  error de sintaxis en o cerca de «1»
+LINE 1: INSERT INTO cat_tipo_preguntas (1,'PADECIMIENTOS');
+                                        ^
