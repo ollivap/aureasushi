@@ -26,5 +26,31 @@ function obtenerPlatillo($platillo_id){
   return $resultado;
 }
 
---otra cambio
+function habilitar($platillos_ids){
+  $mysqli = conexionBD();
+  $ids = implode(",",$platillos_ids);
+  $sql ="UPDATE platillos SET deshabilitadp = 1 WHERE platillo_id IN (".$ids.")";
+  $resultado = mysqli_query($mysqli, $sql);
+  return $resultado;
+}
+
+function deshabilitar($platillos_ids){
+  $mysqli = conexionBD();
+  $ids = implode(",",$platillos_ids);
+  $sql ="UPDATE platillos SET deshabilitadp = 0 WHERE platillo_id IN (".$ids.")";
+  $resultado = mysqli_query($mysqli, $sql);
+  return $resultado;
+}
+
+function eliminar($platillos_ids){
+  $mysqli = conexionBD();
+  $ids = implode(",",$platillos_ids);
+  $sql ="DELETE FROM platillos WHERE platillo_id IN (".$ids.")";
+  $resultado = mysqli_query($mysqli, $sql);
+  return $resultado;
+}
+function repetido($nombre_platillo){
+  return $id_platillo;
+}
+
  ?>
