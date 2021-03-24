@@ -7,10 +7,11 @@
   </head>
   <body>
     <?php include  "partes/menu.php"?>
-    <a href="controladores/nuevoPlatillo.php">Agregar platillo</a>
-    <input type="button" name="Habilitar" value="Habilitar" onclick="document.platillos.operacion.value='habilitar'; document.platillos.submit();">
-    <input type="button" name="Habilitar" value="Deshabilitar" onclick="document.platillos.operacion.value='deshabilitar'; document.platillos.submit();">
-    <input type="button" name="Habilitar" value="Eliminar" onclick="document.platillos.operacion.value='eliminar'; document.platillos.submit();">
+
+    <input type="button" name="agregar" value="Agregar Platillo" onclick="window.location.href='/aureasushi/nuevoPlatillo.php'">
+    <input type="button" name="habilitar" value="Habilitar" onclick="document.platillos.operacion.value='habilitar'; document.platillos.submit();">
+    <input type="button" name="deshabilitar" value="Deshabilitar" onclick="document.platillos.operacion.value='deshabilitar'; document.platillos.submit();">
+    <input type="button" name="eliminar" value="Eliminar" onclick="document.platillos.operacion.value='eliminar'; document.platillos.submit();">
     <h1> Menu </h1>
     <form name="platillos" class="" action="#" method="get">
       <table>
@@ -18,6 +19,7 @@
           <td>Hab/des</td>
           <td>Nombre del platillo</td>
           <td>Costo</td>
+          <td>Habilitado</td>
           <td>Descripcion de platillo</td>
           <td>Editar platillo</td>
         </tr>
@@ -26,10 +28,12 @@
 
         $listadoPlatillos->data_seek(0);
         while ($fila = $listadoPlatillos->fetch_assoc()) {
+          $habilitado = ($fila['deshabilitadp']== 1) ? "Si" : "No";
           echo "<tr>";
           echo "<td><input name='".$fila['platillo_id']."' type='checkbox'></td>".
           "<td>".$fila['nombre'] ."</td>".
           "<td>".$fila['costo'] ."</td>".
+          "<td>".$habilitado ."</td>".
           "<td>".$fila['descripcion']."</td>".
           "<td><a href='editarPlatillo.php?platillo_id=".$fila['platillo_id']."'>Editar</a></td>";
           echo "</tr>";
