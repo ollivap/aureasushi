@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <?php include "partes/head.php"; ?>
-      <link rel="stylesheet" href="aureasushi/public/css/estilo.css">
-    <title>Consultar menu</title>
+      <title>Consultar menu</title>
   </head>
   <body>
     <?php include  "partes/menu.php"?>
@@ -15,9 +14,10 @@
     <input type="button" name="eliminar" value="Eliminar" onclick="document.platillos.operacion.value='eliminar'; document.platillos.submit();">
     <h1> Menu </h1>
     <form name="platillos" class="" action="#" method="get">
+
       <table>
         <tr>
-          <td>Hab/des</td>
+          <td class="listaplatillos"> Hab/des</td>
           <td>Nombre del platillo</td>
           <td>Costo</td>
           <td>Habilitado</td>
