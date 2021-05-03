@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <?php include "partes/head.php"; ?>
+      <link rel="stylesheet" href="aureasushi/public/css/estilo.css">
     <title></title>
   </head>
   <body>

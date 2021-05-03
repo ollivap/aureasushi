@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <?php include "partes/head.php"; ?>
-    <title></title>
+    <title>Aurea_sushi</title>
   </head>
   <body>
     <?php include  "partes/menu.php"?>
