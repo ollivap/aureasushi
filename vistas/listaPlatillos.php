@@ -15,9 +15,9 @@
     <h1> Menu </h1>
     <form name="platillos" class="" action="#" method="get">
 
-      <table>
+      <table class="listaplatillos">
         <tr>
-          <td class="listaplatillos"> Hab/des</td>
+          <td> Hab/des</td>
           <td>Nombre del platillo</td>
           <td>Costo</td>
           <td>Habilitado</td>
