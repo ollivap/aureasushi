@@ -14,7 +14,7 @@ function agregarPlatillo($platillo){
 
 function obtenerPlatillos(){
   $mysqli = conexionBD();
-  $sql ="SELECT * FROM platillos";
+  $sql ="SELECT platillo_id, nombre, descripcion, deshabilitadp AS deshabilitado, foto, TRUNCATE (costo, 2)  AS costo FROM platillos;";
   $resultado = mysqli_query($mysqli, $sql);
   return $resultado;
 }

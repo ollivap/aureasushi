@@ -7,6 +7,7 @@
   </head>
   <body>
     <?php include  "partes/menu.php"?>
+    <div class="Formulario">
     <form enctype="multipart/form-data" action="#" method="post">
       <label for="nombre">Nombre</label>
       <input type="text" name="nombre"> <br>
@@ -20,8 +21,9 @@
       <select class="" name="curp_admon_alta">
         <option value="VIFL951203MDFLGCA09">Lucia Dioselyn</option>
       </select><br>
-      <input type="submit" name="Enviar" value="Enviar">
+      <input type="submit" name="Guardar" value="Guardar">
     </form>
-    <?php include  "partes/piePagina.php"?>
+  </div>
+    <?php include "partes/piePagina.php"?>
   </body>
 </html>

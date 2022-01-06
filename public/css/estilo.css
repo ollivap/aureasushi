@@ -6,7 +6,8 @@
 
 body{
   /*background: url("/aureasushi/public/img/mosaic.jpg") /*ruta absoluta*/
-  background: url("../img/mosaic.jpg")  /*ruta relativa*/
+  background: url("../img/mosaic.jpg");  /*ruta relativa*/
+  text-align:center;
 }
 
 header {
@@ -26,6 +27,9 @@ nav {
   background: red;
   height: 60px;
   text-align:center;
+  border-color: #9C1010;
+  border-width: 3px;
+  border-style: solid;
   }
 
  nav a{
@@ -39,12 +43,105 @@ nav {
   border-radius: 2px;
 }
 
-.listaplatillos{
-color:#ffffff;
+.Slogan{ <!-- Para el bloque del artículo-->
+  width: 70px;
+  height: 80px;
+  float: left;
+  margin-top: 20px;
+  margin: auto;
+  display: inline-block;
 }
 
+.Slogan h1{
+  text-align:center;
+  color: white;
+  margin-top: 20px;
+  margin-left:350;
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.Slogan p{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.Local{
+  /*margin-top: 20px;
+  margin-right: 50px;*/
+  width: 30px;
+  height: 3px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.listadoBlanco{
+color:#ffffff;
+background: #2A2A2A;
+border: red 5px solid;
+/*margin: 15px;*/
+/*margin-top: 50px;
+margin-left: 650px;*/
+margin : auto;
+display:inline-table;
+font-family: sans-serif;
+text-align: center;
+}
+
+/*.listadoBlanco td{
+}*/
+
+.textoRojo{
+margin: 10px;
+padding: 5px;
+color: red;
+}
+
+.alineacionRojo{
+color: red;
+text-align: right;
+}
 nav a:hover{
 
   background-color: black;
   /*background: rgba(0, 0.1, 0, 0.2);*/
+}
+
+.Estilo_botones{
+text-align: center;
+/*color: white;*/
+font-weight: 600;
+font-size: 20px;
+padding-top:15px;
+padding-bottom:15px;
+padding-left:80px;
+padding-right:80px;
+/*background-color:#f2595e;
+border-color: #F69DA1;
+border-width: 3px;
+border-style: solid;*/
+}
+
+.Estilo_botones input{
+  text-decoration:none;
+  font-weight: 600;
+  font-size: 15px;
+  color:#333333;
+  padding-top:6px;
+  padding-bottom:4px;
+  padding-left:40px;
+  padding-right:40px;
+  background-color:#D23604;
+  border-color: #d8d8d8;
+  border-width: 3px;
+  border-style: solid;
+  border-radius:35px;
+}
+
+.Formulario{
+color:#ffffff;
+line-height: 2.5;
+
 }

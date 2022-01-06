@@ -7,7 +7,17 @@
   </head>
   <body>
     <?php include  "partes/menu.php"?>
-    <h1> Contenido de inicio del sistema </h1>
+    <section>
+      <article class="Slogan">
+            <h1>¡La proporción divina en cada bocado!</h1>
+            <p>Comprometidos a brindar un buen servicio
+             a nuestros clientes y deleitar su paladar con nuestros deliciosos platillos.
+           </p>
+      </article>
+     </section>
     <?php include  "partes/piePagina.php"?>
+    <aside class="Local">
+          <img src="public/img/local.jpg" alt="N">
+    </aside>
   </body>
 </html>

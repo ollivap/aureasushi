@@ -1,8 +1,8 @@
 <?php
 function conexionBD(){
   $usuario = "root";
-  $psw = "Olguita02";
-  $bd = "aureasushi";
+  $psw = "kmsl3210";
+  $bd = "aurea_sushi";
   $servidor = "localhost";
   $mysqli = mysqli_connect($servidor, $usuario, $psw, $bd);
   if (mysqli_connect_errno($mysqli)) {
